@@ -23,8 +23,35 @@ describe ("AgeCalc", function() {
       let firstDate = new Date(1987, 9, 2);
       let secondDate = new Date(2018, 1, 9);
       let mercAge = AgeCalc.compareTwoDates(firstDate, secondDate);
-      assert(AgeCalc.spaceYears(mercAge, "mercury") > 126 && AgeCalc.spaceYears(mercAge, "mercury") < 127)
-    })
-  })
+      assert(AgeCalc.spaceYears(mercAge, "mercury") > 126 && AgeCalc.spaceYears(mercAge, "mercury") < 127); //I got my age on other planets off an existing website and I'm just going to test that they all come out between the two whole numbers they should be between because the decimals are huge
+    });
+  });
+
+  describe("spaceYears", function() {
+    it("should convert earth years into venus years", function(){
+      let firstDate = new Date(1987, 9, 2);
+      let secondDate = new Date(2018, 1, 9);
+      let venusAge = AgeCalc.compareTwoDates(firstDate, secondDate);
+      assert(AgeCalc.spaceYears(venusAge, "venus") > 48 && AgeCalc.spaceYears(venusAge, "venus") < 49);
+    });
+  });
+
+  describe("spaceYears", function() {
+    it("should convert earth years into mars years", function(){
+      let firstDate = new Date(1987, 9, 2);
+      let secondDate = new Date(2018, 1, 9);
+      let marsAge = AgeCalc.compareTwoDates(firstDate, secondDate);
+      assert(AgeCalc.spaceYears(marsAge, "mars") > 16 && AgeCalc.spaceYears(marsAge, "mars") < 17)
+    });
+  });
+
+  describe("spaceYears", function() {
+    it("should convert earth years into jupiter years", function(){
+      let firstDate = new Date(1987, 9, 2);
+      let secondDate = new Date(2018, 1, 9);
+      let jupiterAge = AgeCalc.compareTwoDates(firstDate, secondDate);
+      assert(AgeCalc.spaceYears(jupiterAge, "jupiter") > 2 && AgeCalc.spaceYears(jupiterAge, "jupiter") < 3)
+    });
+  });
 
 })
