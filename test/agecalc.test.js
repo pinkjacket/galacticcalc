@@ -1,5 +1,6 @@
 const assert = require("assert");
 import * as AgeCalc from "../src/agecalc.js";
+import { time } from "../src/timetable.js";
 
 describe ("AgeCalc", function() {
 
@@ -53,5 +54,15 @@ describe ("AgeCalc", function() {
       assert(AgeCalc.spaceYears(jupiterAge, "jupiter") > 2 && AgeCalc.spaceYears(jupiterAge, "jupiter") < 3)
     });
   });
+
+  describe("remainingYears", function() {
+    it("should compare the user's age and life expectancy and return the difference", function(){
+      let firstDate = new Date(1987, 9, 2);
+      let secondDate = new Date(2018, 1, 9);
+      let userAge = AgeCalc.compareTwoDates(firstDate, secondDate);
+      let lifeExpectancy = 80;
+      assert(AgeCalc.remainingYears(userAge, lifeExpectancy) > 50 && AgeCalc.remainingYears(userAge, lifeExpectancy) < 51);
+    })
+  })
 
 })
