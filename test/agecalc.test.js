@@ -23,7 +23,7 @@ describe ("AgeCalc", function() {
       let firstDate = new Date(1987, 9, 2);
       let secondDate = new Date(2018, 1, 9);
       let mercAge = AgeCalc.compareTwoDates(firstDate, secondDate);
-      assert.equal(189.2, AgeCalc.spaceYears(mercAge,"mercury"))
+      assert(AgeCalc.spaceYears(mercAge, "mercury") > 126 && AgeCalc.spaceYears(mercAge, "mercury") < 127)
     })
   })
 
