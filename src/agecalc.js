@@ -5,5 +5,10 @@ export function yearsToSeconds(years){
   finaltime *= time.hours;
   finaltime *= time.minutes;
   finaltime *= time.seconds;
-  return finaltime
+  return finaltime;
+}
+
+export function compareTwoDates(firstDate, secondDate){
+  let difference = (secondDate - firstDate)/1000;
+  return difference;
 }

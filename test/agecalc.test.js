@@ -9,4 +9,12 @@ describe ("AgeCalc", function() {
     });
   });
 
+  describe("compareTwoDates", function(){
+    it("should compare two dates and calculate the difference in seconds between them", function(){
+      let firstDate = new Date(2018, 1, 6);
+      let secondDate = new Date(2018, 1, 9);
+      assert.equal(259200, AgeCalc.compareTwoDates(firstDate, secondDate));
+    });
+  });
+
 })
