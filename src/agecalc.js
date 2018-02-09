@@ -19,6 +19,8 @@ export function spaceYears(time, planet){
   return age;
 }
 
-export function remainingYears(userAge, lifeExpectancy){
-  return null;
+export function remainingYears(time, planet, lifeExpectancy){
+  let age = time/yearsToSeconds(planet);
+  let timeLeft = lifeExpectancy - age;
+  return timeLeft;
 }

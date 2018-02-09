@@ -61,7 +61,7 @@ describe ("AgeCalc", function() {
       let secondDate = new Date(2018, 1, 9);
       let userAge = AgeCalc.compareTwoDates(firstDate, secondDate);
       let lifeExpectancy = 80;
-      assert(AgeCalc.remainingYears(userAge, lifeExpectancy) > 50 && AgeCalc.remainingYears(userAge, lifeExpectancy) < 51);
+      assert(AgeCalc.remainingYears(userAge, "earth", lifeExpectancy) > 49 && AgeCalc.remainingYears(userAge, "earth", lifeExpectancy) < 50);
     })
   })
 
