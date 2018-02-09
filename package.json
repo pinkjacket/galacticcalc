@@ -1,0 +1,19 @@
+{
+  "name": "galactic-calc",
+  "version": "1.0.0",
+  "description": "epicodus friday project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinkjacket/galacticcalc.git"
+  },
+  "author": "James Donlan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinkjacket/galacticcalc/issues"
+  },
+  "homepage": "https://github.com/pinkjacket/galacticcalc#readme"
+}
