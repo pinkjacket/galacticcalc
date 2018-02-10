@@ -1,0 +1,11 @@
+body{
+  text-align: center;
+  color: white;
+  background-color: darkblue;
+}
+
+.form-control{
+  display: block;
+  text-align: center;
+  max-width: 60%;
+}

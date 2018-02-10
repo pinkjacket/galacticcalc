@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Super Galactic Space Age Calculator of The Future</title>
+	</head>
+	<body>
+		<div class="container">
+      <div class="row">
+        <div class="col-md-6" id="formdiv">
+
+          <form class="form-inline" id="ageForm">
+
+            <div class="form-group">
+
+              <!-- I wanted to just use the little calendar that takes like four lines to implement but I wasn't sure if the date format would play nice with the backend, or how long it would take me to realize it if it didn't, so I'm cobbling together some less cool input forms instead -->
+              <label for="birthMonth">Select Date of Birth</label>
+
+              <select class="form-control" name="month" id="birthMonth">
+                  <option value="0">January</option>
+                  <option value="1">February</option>
+                  <option value="2">March</option>
+                  <option value="3">April</option>
+                  <option value="4">May</option>
+                  <option value="5">June</option>
+                  <option value="6">July</option>
+                  <option value="7">August</option>
+                  <option value="8">September</option>
+                  <option value="9">October</option>
+                  <option value="10">November</option>
+                  <option value="11">December</option>
+                </select>
+                <input class="form-control" type=number id="birthDay" placeholder="Day of Birth"></input>
+                <input class="form-control" type=number id="birthYear" placeholder="Year of Birth"></input>
+
+              <label for="planets">What planet are you from?</label>
+              <select class="form-control" id="planets" placeholder="Earth">
+                <option value="mercury">Mercury</option>
+                <option value="venus">Venus</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+              </select>
+
+              <p><label for="lifeEstimate">How long do you think you'll live in Earth years? The rough average is 80.</label>
+              <input class="form-control" type=number id="lifeEstimate" placeholder="Estimated Lifespan"></input></p>
+            </div>
+            <button type="submit" id="ageButton">Find your space age!</button>
+        </form>
+          <div id="output">
+          </div>
+
+        </div>
+      </div>
+		</div>
+	</body>
+</html>
