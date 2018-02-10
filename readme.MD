@@ -27,12 +27,12 @@ _Well, there are more than five planets so I'd probably add the rest of those in
 
 ## Technologies Used
 
-_JavaScript_
-_jQuery_
-_CSS_
-_bootstrap_
-_webpack_
-_mocha_
+* _JavaScript_
+* _jQuery_
+* _CSS_
+* _bootstrap_
+* _webpack_
+* _mocha_
 
 ### License
 
